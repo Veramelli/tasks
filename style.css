@@ -1,0 +1,47 @@
+html,
+body {
+  min-height: 100%;
+}
+body {
+  background: linear-gradient(
+    0deg,
+    rgba(44, 142, 143, 1) 10%,
+    rgba(255, 234, 188, 1) 90%
+  );
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+button {
+  background-color: rgb(201, 228, 228);
+  border: none;
+  border-radius: 5px;
+  height: 35px;
+}
+
+.wrapper {
+  font-family: "Nanum Gothic", sans-serif;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.list__item {
+  margin: 5px 0;
+  padding: 5px;
+  border: 1px solid gray;
+  border-radius: 10px;
+  font-size: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.deleteTasks {
+  margin-top: 10px;
+}
+
+.title {
+  padding: 15px;
+  font-size: 25px;
+}

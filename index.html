@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Планировщик задач</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="addTask">
+        <div class="title">Добавить задачу</div>
+        <input class="taskName" type="text" placeholder="Задача" />
+        <button class="addTaskButton">Добавить</button>
+      </div>
+      <div class="taskList">
+        <div class="title">Список задач</div>
+        <div class="emptyBlock">Нет задач</div>
+
+        <div class="list"></div>
+      </div>
+      <div class="deleteTasks">
+        <button class="deleteTask" disabled>Очистить список задач</button>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
