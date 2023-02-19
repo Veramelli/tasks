@@ -1,3 +1,5 @@
+"use strict";
+
 const input = document.querySelector(".taskName");
 const addButton = document.querySelector(".addTaskButton");
 const list = document.querySelector(".list");
@@ -21,8 +23,10 @@ function createTasks(value) {
 }
 
 deleteButton.addEventListener("click", (e) => {
-  list.remove();
+  const listItems = document.querySelectorAll(".list__item");
+  for (let item of listItems) {
+    item.remove();
+  }
   emptyBlock.style.display = "block";
   deleteButton.setAttribute("disabled", true);
 });
-//после очищения списка новые задачи не добавляются!!!!!!!!!!!
